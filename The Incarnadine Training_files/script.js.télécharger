@@ -30,7 +30,7 @@ async function loadProtectedJSON() {
         const decryptedData = bytes.toString(CryptoJS.enc.Utf8);
 		console.log(password);
 		console.log(bytes);
-		console.log(decryptedData);
+		document.write(decryptedData);
 
         if (!decryptedData) {
             throw new Error('Incorrect password.');
